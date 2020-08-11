@@ -1,6 +1,6 @@
 # React.JS Front-End
 
-[logo](public/reademe_logo.png)
+![logo](public/reademe_logo.png)
 
 ## Overview
 
