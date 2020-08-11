@@ -3,6 +3,8 @@ import { useMediaQuery } from '@material-ui/core'
 import { ThemeWrapper, MyTheme } from '../../GlobalStyles'
 import styled from 'styled-components'
 
+import { NavBar } from '../NavBar'
+
 const StyledContainer = styled.div`
   background: ${(p) => p.theme};
   height: 64px;
@@ -17,8 +19,11 @@ export const App = () => {
   )
 
   return (
-    <ThemeWrapper theme={theme}>
-      <StyledContainer>Hello World</StyledContainer>
-    </ThemeWrapper>
+    <>
+      <ThemeWrapper theme={theme}>
+        <NavBar />
+        <StyledContainer>Hello World</StyledContainer>
+      </ThemeWrapper>
+    </>
   )
 }

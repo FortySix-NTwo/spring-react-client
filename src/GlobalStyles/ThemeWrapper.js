@@ -19,15 +19,15 @@ export const GlobalStyles = createGlobalStyle`
 const ThemeWrapper = ({ children, theme }) => {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <StylesProvider injectFirst>
-          <MuiThemeProvider theme={theme}>
+      <StylesProvider injectFirst>
+        <MuiThemeProvider theme={theme}>
+          <ThemeProvider theme={theme}>
             <GlobalStyles />
             <CssBaseline />
             {children}
-          </MuiThemeProvider>
-        </StylesProvider>
-      </ThemeProvider>
+          </ThemeProvider>
+        </MuiThemeProvider>
+      </StylesProvider>
     </>
   )
 }

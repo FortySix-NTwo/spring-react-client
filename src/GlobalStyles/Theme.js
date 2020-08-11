@@ -1,5 +1,16 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
 
+import green from '@material-ui/core/colors/green'
+import red from '@material-ui/core/colors/red'
+
+const primaryGreen = green[500]
+const accentGreen = green.A200
+const darkGreen = green[900]
+
+const primaryRed = red[500]
+const accentRed = red.A200
+const darkRed = red[900]
+
 const MyTheme = (themeName = 'light') => {
   let theme = createMuiTheme({
     themeName: 'Custom Theme Name',
@@ -10,16 +21,24 @@ const MyTheme = (themeName = 'light') => {
     palette: {
       type: themeName,
       primary: {
-        light: '#598392',
-        main: '#2E294E',
-        dark: '#1D1E2C',
-        contrastText: '#E0E2DB'
+        spaceCadet: '#1E1E24',
+        gunMetal: '#22333B',
+        almond: '#22333B',
+        paradisePink: '#E5446D',
+        light: primaryGreen,
+        main: accentGreen,
+        dark: darkGreen,
+        contrastText: '#fff'
       },
       secondary: {
-        light: '#BAD7F2',
-        main: '#F2E2BA',
-        dark: '#2C8C99',
-        contrastText: '#FFFFFF'
+        salmonPink: '#FFA69E',
+        cream: '#FAF3DD',
+        celadonGreen: '#B8F2E6',
+        coolGrey: '#AED9E0',
+        light: primaryRed,
+        main: accentRed,
+        dark: darkRed,
+        contrastText: '#fff'
       }
     }
   })
