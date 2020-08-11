@@ -5,8 +5,8 @@ import styled from 'styled-components'
 const StyledAppBar = styled(AppBar)`
   background: linear-gradient(
     45deg,
-    ${(props) => props.theme.palette.primary.spaceCadet} 40%,
-    ${(props) => props.theme.palette.primary.gunMetal} 70%
+    ${(props) => props.theme.palette.primary.dark} 40%,
+    ${(props) => props.theme.palette.primary.light} 70%
   );
 `
 
